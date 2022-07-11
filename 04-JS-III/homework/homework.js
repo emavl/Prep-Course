@@ -26,6 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let resul=[];
+  for (const i of array) {
+    let variante= i+1;
+    resul.push(variante);
+  }
+  return resul;
 }
 
 
