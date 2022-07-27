@@ -100,7 +100,7 @@ function promedioResultadosTest(resultadosTest) {
 	let resultado = 0;
 
 	for(let i=0; i < resultadosTest.length ; i++){
-		sumatoria = numeros[i];
+		sumatoria = resultadosTest[i];
 		resultado = resultado + sumatoria;
 	}
 	return resultado/resultadosTest.length
@@ -111,6 +111,14 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  let cajita = 0;
+  for( let i=0; i < numeros.length; i++){
+    if(numeros[i] > cajita){
+      	cajita = numeros[i];
+    }
+  }
+  return cajita;
+  
 }
 
 
