@@ -275,16 +275,19 @@ function continueStatement(numero) {
   // Tu código:
   let aNuevo = [];
   let suma = numero;
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 10; i++) {
+
+    if( i === 5) { continue;}
+
+    suma += 2;
+
+    aNuevo.push(suma);
+
+  }
      
-     if(i == 5){
-          continue;
-      }else{
-          suma += 2;
-          aNuevo.push(suma);
-      }  
-      return aNuevo;
-    }
+  return aNuevo;
+       
+    
 
 }
 
